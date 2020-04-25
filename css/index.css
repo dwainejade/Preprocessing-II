@@ -193,6 +193,10 @@ img {
   text-decoration: none;
   color: black;
 }
+.navbar a:hover {
+  color: #fbc566;
+  cursor: pointer;
+}
 @media (max-width: 550px) {
   .navbar {
     width: 100%;
@@ -213,13 +217,17 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home a {
+  text-decoration: none;
+}
 .home .welcome-section {
+  margin: auto;
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 2%;
 }
 @media (max-width: 550px) {
   .home .welcome-section {
-    padding: 2%;
+    padding: 0% 2%;
   }
 }
 .home .content-section {
@@ -231,15 +239,31 @@ img {
 @media (max-width: 550px) {
   .home .content-section {
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
+.home .content-section .img-content {
+  order: 2;
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 550px) {
+  .home .content-section .text-content {
+    width: 90%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 550px) {
+  .home .content-section .img-content {
+    width: auto;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -253,12 +277,17 @@ img {
   padding-right: 0;
 }
 .home .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
+  padding-right: 4%;
 }
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 550px) {
+  .home .content-destination {
+    width: 100%;
+    padding: 0 4%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -269,16 +298,35 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 550px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 550px) {
+  .home .content-pick .destination {
+    width: auto;
+    padding: 0 15%;
+  }
+}
 .home .content-pick .destination .btn {
-  background-color: #008080;
+  background-color: #14a0b4;
   color: white;
   font-size: 2rem;
   text-align: center;
   border-radius: 10px;
   padding: 3%;
   width: 80%;
+}
+@media (max-width: 550px) {
+  .home .content-pick .destination .btn {
+    width: auto;
+  }
+}
+.home .content-pick .destination .btn:hover {
+  cursor: pointer;
 }
