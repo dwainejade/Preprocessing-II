@@ -1,0 +1,48 @@
+.contact-container {
+    margin: auto;
+    max-width: 900px;
+}
+
+.btn {
+    .btn-design(@btn-color, white, 1.6rem);
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+    width: 140px;
+    margin: 20px auto;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 2%;
+    font-size: 1.6rem;
+    border: 4px solid silver;
+    border-radius: 25px;
+
+    input {
+        font-size: 1.6rem;
+        margin-right: 40px;
+    }
+
+    option, input,  {
+        font-size: 1.6rem;
+    }
+
+    .names{
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 780px) {
+            display: inline;
+        }
+    }
+
+    .inputs {
+        padding-top: 2%;
+    }
+}
